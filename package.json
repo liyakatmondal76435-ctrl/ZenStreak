@@ -1,0 +1,7 @@
+{
+  "name": "zenstreak",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Android project ready'"
+  }
+}

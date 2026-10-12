@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ZenStreak</string>
+    <string name="tab_dashboard">Dashboard</string>
+    <string name="tab_stats">Stats &amp; History</string>
+    <string name="tab_sos">SOS Urge Breaker</string>
+    <string name="settings_title">Settings &amp; Privacy</string>
+    <string name="reset_streak">Reset Streak</string>
+    <string name="check_in">Daily Check-In</string>
+</resources>
