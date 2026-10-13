@@ -37,7 +37,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.ui.theme.AlertCrimson
+import com.example.ui.theme.CoralAlert
 
 @Composable
 fun AppLockScreen(
@@ -107,7 +107,7 @@ fun AppLockScreen(
                             .clip(CircleShape)
                             .background(
                                 when {
-                                    showError -> AlertCrimson
+                                    showError -> CoralAlert
                                     filled -> MaterialTheme.colorScheme.primary
                                     else -> MaterialTheme.colorScheme.surfaceVariant
                                 }
@@ -130,7 +130,7 @@ fun AppLockScreen(
             ) {
                 Text(
                     text = "Incorrect PIN. Try again.",
-                    color = AlertCrimson,
+                    color = CoralAlert,
                     style = MaterialTheme.typography.bodySmall,
                     fontWeight = FontWeight.Medium
                 )

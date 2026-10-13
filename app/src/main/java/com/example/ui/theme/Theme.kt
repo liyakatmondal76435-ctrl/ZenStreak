@@ -8,56 +8,49 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
-private val DarkColorScheme = darkColorScheme(
-    primary = EmeraldDarkPrimary,
-    onPrimary = EmeraldDarkOnPrimary,
-    primaryContainer = EmeraldDarkPrimaryContainer,
-    onPrimaryContainer = EmeraldDarkOnPrimaryContainer,
-    secondary = GoldDarkSecondary,
-    onSecondary = GoldDarkOnSecondary,
-    secondaryContainer = GoldDarkSecondaryContainer,
-    onSecondaryContainer = GoldDarkOnSecondaryContainer,
-    tertiary = CyanDarkTertiary,
-    onTertiary = CyanDarkOnTertiary,
-    tertiaryContainer = CyanDarkTertiaryContainer,
-    onTertiaryContainer = CyanDarkOnTertiaryContainer,
-    background = DarkBackground,
-    onBackground = DarkOnBackground,
-    surface = DarkSurface,
-    onSurface = DarkOnSurface,
-    surfaceVariant = DarkSurfaceVariant,
-    onSurfaceVariant = DarkOnSurfaceVariant,
-    outline = DarkOutline
+private val LightColorScheme = lightColorScheme(
+    primary = ForestGreen,
+    onPrimary = Color.White,
+    primaryContainer = MintActivePill,
+    onPrimaryContainer = ForestGreen,
+    secondary = ForestGreen,
+    onSecondary = Color.White,
+    secondaryContainer = MintActivePill,
+    onSecondaryContainer = ForestGreen,
+    background = MintBackground,
+    onBackground = Color(0xFF132B23),
+    surface = MintCardSurface,
+    onSurface = Color(0xFF132B23),
+    surfaceVariant = Color(0xFFE4EFE9),
+    onSurfaceVariant = Color(0xFF4C6A60),
+    outline = MintCardOutline
 )
 
-private val LightColorScheme = lightColorScheme(
-    primary = EmeraldLightPrimary,
-    onPrimary = EmeraldLightOnPrimary,
-    primaryContainer = EmeraldLightPrimaryContainer,
-    onPrimaryContainer = EmeraldLightOnPrimaryContainer,
-    secondary = GoldLightSecondary,
-    onSecondary = GoldLightOnSecondary,
-    secondaryContainer = GoldLightSecondaryContainer,
-    onSecondaryContainer = GoldLightOnSecondaryContainer,
-    tertiary = CyanLightTertiary,
-    onTertiary = CyanLightOnTertiary,
-    tertiaryContainer = CyanLightTertiaryContainer,
-    onTertiaryContainer = CyanLightOnTertiaryContainer,
-    background = LightBackground,
-    onBackground = LightOnBackground,
-    surface = LightSurface,
-    onSurface = LightOnSurface,
-    surfaceVariant = LightSurfaceVariant,
-    onSurfaceVariant = LightOnSurfaceVariant,
-    outline = LightOutline
+private val DarkColorScheme = darkColorScheme(
+    primary = MintBadgeGreen,
+    onPrimary = ForestGreenDark,
+    primaryContainer = DarkMintActivePill,
+    onPrimaryContainer = Color(0xFFD4EFE4),
+    secondary = MintBadgeGreen,
+    onSecondary = ForestGreenDark,
+    secondaryContainer = DarkMintActivePill,
+    onSecondaryContainer = Color(0xFFD4EFE4),
+    background = DarkForestBackground,
+    onBackground = DarkForestText,
+    surface = DarkForestCard,
+    onSurface = DarkForestText,
+    surfaceVariant = DarkForestSurface,
+    onSurfaceVariant = Color(0xFFA1BDB3),
+    outline = Color(0xFF28443B)
 )
 
 @Composable
-fun ZenStreakTheme(
-    themeMode: String = "SYSTEM",
-    dynamicColor: Boolean = true,
+fun IronWillTheme(
+    themeMode: String = "LIGHT",
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val systemInDark = isSystemInDarkTheme()

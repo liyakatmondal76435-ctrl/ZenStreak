@@ -1,6 +1,6 @@
 {
-  "name": "ZenStreak",
-  "description": "Private Habit & Clean Streak Tracker with Material 3 Expressive design, live counter, urge breaker, and local Room database.",
+  "name": "NutYou",
+  "description": "NutYou - Male Habit Recovery, Clean Streak Tracker & Analytics.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

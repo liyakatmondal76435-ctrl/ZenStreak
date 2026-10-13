@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Update
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -20,6 +21,9 @@ interface StreakDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertLog(log: StreakLog): Long
+
+    @Update
+    suspend fun updateLog(log: StreakLog)
 
     @Query("DELETE FROM streak_logs WHERE id = :id")
     suspend fun deleteLogById(id: Long)
